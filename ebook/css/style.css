@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #5fc7ff, 5%, #bce3fd, 50%, #bce3fd);
+    position: absolute;
+}
+
+.wrapper .bubble {
+    height: 60px;
+    width: 60px;
+    border: 1px solid rgb(203, 236, 255);
+    border-radius: 50px;
+    position: absolute;
+    animation: animate 10s linear infinite;
+}
+
+
+.wrapper .bubble:nth-child(1) {
+    top: 20%;
+    left: 20%;
+    animation-duration: 8s;
+    background-image: linear-gradient(to right, #fedfb6 0%, #f9b147 100%);
+}
+
+.wrapper .bubble:nth-child(2) {
+    top: 60%;
+    left: 80%;
+    animation-duration: 10s;
+    background-image: linear-gradient(to right, #ec6759 0%, #cc2a30 100%);
+}
+
+.wrapper .bubble:nth-child(3) {
+    top: 40%;
+    left: 40%;
+    animation-duration: 3s;
+    background-image: linear-gradient(to right, #fedfb6 0%, #f9b147 100%);
+}
+
+.wrapper .bubble:nth-child(4) {
+    top: 66%;
+    left: 30%;
+    animation-duration: 7s;
+    background-image: linear-gradient(to right, #ec6759 0%, #cc2a30 100%);
+
+}
+
+.wrapper .bubble:nth-child(5) {
+    top: 90%;
+    left: 10%;
+    animation-duration: 9s;
+    background-image: linear-gradient(to right, #fedfb6 0%, #f9b147 100%);
+}
+
+.wrapper .bubble:nth-child(6) {
+    top: 30%;
+    left: 60%;
+    animation-duration: 5s;
+    background-image: linear-gradient(to right, #ec6759 0%, #cc2a30 100%);
+
+}
+
+.wrapper .bubble:nth-child(7) {
+    top: 70%;
+    left: 20%;
+    animation-duration: 8s;
+    background-image: linear-gradient(to right, #fedfb6 0%, #f9b147 100%);
+}
+
+.wrapper .bubble:nth-child(8) {
+    top: 75%;
+    left: 60%;
+    animation-duration: 10s;
+    background-image: linear-gradient(to right, #ec6759 0%, #cc2a30 100%);
+}
+
+.wrapper .bubble:nth-child(9) {
+    top: 50%;
+    left: 50%;
+    animation-duration: 6s;
+    background-image: linear-gradient(to right, #fedfb6 0%, #f9b147 100%);
+}
+
+.wrapper .bubble:nth-child(10) {
+    top: 45%;
+    left: 20%;
+    animation-duration: 10s;
+    background-image: linear-gradient(to right, #ec6759 0%, #cc2a30 100%);
+}
+
+.wrapper .bubble:nth-child(11) {
+    top: 10%;
+    left: 90%;
+    animation-duration: 9s;
+    background-image: linear-gradient(to right, #fedfb6 0%, #f9b147 100%);
+}
+
+.wrapper .bubble:nth-child(12) {
+    top: 20%;
+    left: 70%;
+    animation-duration: 7s;
+    background-image: linear-gradient(to right, #ec6759 0%, #cc2a30 100%);
+}
+
+.wrapper .bubble:nth-child(13) {
+    top: 20%;
+    left: 20%;
+    animation-duration: 8s;
+    background-image: linear-gradient(to right, #fedfb6 0%, #f9b147 100%);
+}
+
+.wrapper .bubble:nth-child(14) {
+    top: 60%;
+    left: 5%;
+    animation-duration: 6s;
+    background-image: linear-gradient(to right, #ec6759 0%, #cc2a30 100%);
+}
+
+.wrapper .bubble:nth-child(15) {
+    top: 90%;
+    left: 80%;
+    animation-duration: 9s;
+    background-image: linear-gradient(to right, #fedfb6 0%, #f9b147 100%);
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(70deg);
+    }
+
+    100% {
+        transform: scale(1.3) translateY(-100px) rotate(360deg);
+    }
+}
+
+.btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999999999;
+}
+
+.btn a img {
+    width: 42;
+    height: 42px;
+}
