@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>가미 BI Guide</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="./images_2/favicon-16x16.png">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background: fixed url(images_2/wave.png)no-repeat bottom center;
+			background-size: 100% 450px;
+
+		}
+
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		img {
+			vertical-align: middle;
+		}
+
+		.fixed_box {
+			position: fixed;
+			bottom: 50%;
+			right: 30px;
+			width: 60px;
+		}
+
+		#top {
+			max-width: 1320px;
+			margin: 0 auto;
+		}
+
+		#top img {
+			width: 100%;
+			display: block;
+		}
+
+		#logo {
+			position: fixed;
+			left: 30px;
+			top: 250px;
+			animation: up_down 1.5s linear infinite;
+		}
+
+		#logo img {
+			width: 219px;
+			height: 105px;
+		}
+
+		@keyframes up_down {
+			0% {
+				transform: translateY(0);
+			}
+
+			50% {
+				transform: translateY(20px);
+			}
+
+			100% {
+				transform: translateY(0);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="logo">
+		<img src="images_2/logo.png" alt="logo">
+	</div>
+	<div id="top">
+		<img src="./images_2/01 표지.jpg" class="guide1">
+		<img src="./images_2/02 오버뷰.jpg" class="guide1">
+		<img src="./images_2/03 키워드.jpg" class="guide1">
+		<img src="./images_2/04 로고.jpg" class="guide1">
+		<img src="./images_2/05 로고.2.jpg" class="guide1">
+		<img src="./images_2/06 SWOT.jpg" class="guide1">
+		<img src="./images_2/07 경쟁사.jpg" class="guide1">
+		<img src="./images_2/08 persona.jpg" class="guide1">
+
+	</div>
+	<div class="fixed_box">
+		<a href="#top" class="top_btn"><!--href부분은 이미지를 감싼 div에 있는 id이름과 동일하게 설정.-->
+			<img src="images_2/top.png" alt="top">
+		</a>
+	</div>
+
+
+	<!--이동시 부드럽게 이동시키기 위해 추가한 구문 시작. script쪽 전부 삭제가능.-->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script>
+		$(function () {
+			$('a[href*="#"]:not([href="#"])').click(function () {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 500);//움직이는 시간 조정
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	<!--이동시 부드럽게 이동시키기 위해 추가한 구문 끝. 삭제가능.-->
+</body>
+
+</html>
