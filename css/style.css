@@ -17,6 +17,8 @@ body {
   line-height: 1.7;
   color: #4d4d4d;
   background: #fff;
+  background: url(../images_2/plum.png)no-repeat bottom right;
+  background-size: 30%;
 }
 
 #page {
@@ -588,23 +590,23 @@ figure {
 }
 
 .progress-bar.progress-bar-1 {
-  background-color: #2980b9 !important;
+  background-color: #000 !important;
 }
 
 .progress-bar.progress-bar-2 {
-  background-color: #c0392b !important;
+  background-color: #000 !important;
 }
 
 .progress-bar.progress-bar-3 {
-  background-color: #d35400 !important;
+  background-color: #000 !important;
 }
 
 .progress-bar.progress-bar-4 {
-  background-color: #8e44ad !important;
+  background-color: #000 !important;
 }
 
 .progress-bar.progress-bar-5 {
-  background-color: #27ae60 !important;
+  background-color: #a61111 !important;
 }
 
 .chart {
@@ -915,9 +917,10 @@ figure {
 }
 
 #fh5co-footer {
-  padding: 50px 0;
+  padding: 120px 0;
   float: left;
   width: 100%;
+
 }
 
 #fh5co-footer p:last-child {
